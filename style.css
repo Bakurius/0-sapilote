@@ -33,7 +33,7 @@
   align-items: center;
   width: 90px;
   height: 90px;
-  background-color: #d3bff9;
+  background-color: #84fab0;
   border-radius: 50%;
   border: 5px solid white;
   outline: 1px solid black;
@@ -61,7 +61,7 @@
 
 .title-titles-name span {
   display: block;
-  background: -webkit-linear-gradient(#e0c3fc, #8ec5fc);
+  background: -webkit-linear-gradient(#84fab0, #8fd3f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -145,6 +145,11 @@
   height: 8px;
 }
 
+.infobar-blocks-bar:hover {
+  background: none;
+  background-color: #fee140;
+}
+
 .bar1 {
   width: 145px;
 }
@@ -210,11 +215,19 @@
   stroke-width: 6;
   stroke-linecap: round;
   stroke-dashoffset: 188.4;
-  transition: stroke-dashoffset 1.5s ease-out;
+  transition: stroke-dashoffset 1.1s ease-out;
 }
 
 .stat-circle.animate .progress-circle {
   animation: fillCircle 1.5s ease-out forwards;
+}
+
+.stat-circle .progress-circle {
+  transition: stroke 1.1s ease, stroke-dashoffset 1.1s ease, transform 1.1s ease;
+}
+
+.stat-circle:hover .progress-circle {
+  stroke: #fee140;
 }
 
 @keyframes fillCircle {
